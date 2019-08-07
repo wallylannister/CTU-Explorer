@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "988449395382",
+    "firebase_url": "https://ctu-adventure.firebaseio.com",
+    "project_id": "ctu-adventure",
+    "storage_bucket": "ctu-adventure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988449395382:android:90e2b992e4453524",
+        "android_client_info": {
+          "package_name": "com.ctu.ctuadventure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988449395382-57lppqspvbf8iqudbpr7adkcooce3k96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEXGyL4zKyBvCbGO4kojZIkEU_EXjY-hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988449395382-57lppqspvbf8iqudbpr7adkcooce3k96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
