@@ -1,4 +1,4 @@
-package com.example.ctuadventure;
+package com.ctu.ctuadventure;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

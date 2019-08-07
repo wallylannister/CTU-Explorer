@@ -1,4 +1,4 @@
-package com.example.ctuadventure;
+package com.ctu.ctuadventure;
 
 import org.junit.Test;
 
