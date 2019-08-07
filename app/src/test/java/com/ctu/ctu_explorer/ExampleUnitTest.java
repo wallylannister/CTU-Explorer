@@ -1,4 +1,4 @@
-package com.ctu.ctuadventure;
+package com.ctu.ctu_explorer;
 
 import org.junit.Test;
 

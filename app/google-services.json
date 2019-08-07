@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "988449395382",
-    "firebase_url": "https://ctu-adventure.firebaseio.com",
-    "project_id": "ctu-adventure",
-    "storage_bucket": "ctu-adventure.appspot.com"
+    "project_number": "546705132401",
+    "firebase_url": "https://ctu-explorer.firebaseio.com",
+    "project_id": "ctu-explorer",
+    "storage_bucket": "ctu-explorer.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:988449395382:android:90e2b992e4453524",
+        "mobilesdk_app_id": "1:546705132401:android:d451187677e68a16",
         "android_client_info": {
-          "package_name": "com.ctu.ctuadventure"
+          "package_name": "com.ctu.ctu_explorer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "988449395382-57lppqspvbf8iqudbpr7adkcooce3k96.apps.googleusercontent.com",
+          "client_id": "546705132401-kddsbrlur5shd1gtikthagdberm4asof.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDEXGyL4zKyBvCbGO4kojZIkEU_EXjY-hI"
+          "current_key": "AIzaSyDboZFvyaAR0nqJlZfdxRQqhBXKyi-aYWM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "988449395382-57lppqspvbf8iqudbpr7adkcooce3k96.apps.googleusercontent.com",
+              "client_id": "546705132401-kddsbrlur5shd1gtikthagdberm4asof.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
