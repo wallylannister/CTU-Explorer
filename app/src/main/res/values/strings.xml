@@ -2,4 +2,5 @@
     <string name="app_name">CTU Explorer</string>
     <string name="bottom_nav_map_view">Map View</string>
     <string name="bottom_nav_building_info">Building Info</string>
+    <string name="message_default_text">Wel!</string>
 </resources>
