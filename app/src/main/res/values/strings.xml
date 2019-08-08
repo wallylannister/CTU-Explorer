@@ -3,4 +3,17 @@
     <string name="bottom_nav_map_view">Map View</string>
     <string name="bottom_nav_building_info">Building Info</string>
     <string name="message_default_text">Wel!</string>
+    <string name="capture_btn_desc">Capture</string>
+    <string name="my_location_btn_desc">My Location</string>
+    <string-array name="buildings_array">
+        <item>Select a destination...</item>
+        <item>College of ICT</item>
+        <item>College of Economics</item>
+        <item>School of Law</item>
+        <item>College of Agriculture</item>
+        <item>College of Aquaculture &amp; Fisheries</item>
+        <item>College of Engineering Technology</item>
+        <item>College of Environment &amp; Natural Resources</item>
+        <item>College of Natural Sciences</item>
+    </string-array>
 </resources>
