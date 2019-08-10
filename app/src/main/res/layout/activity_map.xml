@@ -18,6 +18,21 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageButton
+            android:id="@+id/drawer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:background="#ffffff"
+            android:padding="8dp"
+            android:elevation="6dp"
+            android:contentDescription="Menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/building_selection"/>
+
         <Spinner
             android:id="@+id/building_selection"
             android:layout_width="0dp"
@@ -31,7 +46,7 @@
             android:spinnerMode="dropdown"
             android:elevation="6dp"
             app:layout_constraintEnd_toStartOf="@+id/capture_btn"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/drawer_btn"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton

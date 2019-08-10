@@ -24,6 +24,11 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.model.DividerDrawerItem;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 
 import org.osmdroid.bonuspack.routing.OSRMRoadManager;
 import org.osmdroid.bonuspack.routing.Road;
@@ -102,7 +107,17 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_map);
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
+        DrawerMenu.create(this);
+        ImageButton drawerBtn = findViewById(R.id.drawer_btn);
+        drawerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerMenu.open();
+            }
+        });
 
         // disable strict mode for easy development
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -110,8 +125,6 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
 
         Context ctx = getApplicationContext();
         Configuration.getInstance().load(ctx, PreferenceManager.getDefaultSharedPreferences(ctx));
-
-        setContentView(R.layout.activity_map);
 
         checkPermissionsStateAndSetupMap();
         getCurrentLocation();
