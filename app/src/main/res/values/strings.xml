@@ -5,7 +5,7 @@
     <string name="message_default_text">Wel!</string>
     <string name="capture_btn_desc">Capture</string>
     <string name="my_location_btn_desc">My Location</string>
-    <string name="osrm_server_url">http://34.87.84.153/route/v1/driving/</string>
+    <string name="osrm_server_url">http://34.87.84.153/route/v1/foot/</string>
     <string-array name="buildings_array">
         <item>Select a destination...</item>
         <item>College of ICT</item>
