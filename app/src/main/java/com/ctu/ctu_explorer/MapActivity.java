@@ -58,8 +58,6 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
     final MapEventsReceiver mReceive = new MapEventsReceiver(){
         @Override
         public boolean singleTapConfirmedHelper(GeoPoint p) {
-            mapView.getOverlays().remove(destinationMarker);
-            mapView.getOverlays().remove(routingOverlay);
             setCurrentLocation(p.getLatitude(),p.getLongitude());
             return false;
         }
@@ -71,6 +69,7 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
 
     public void setCurrentLocation(double latitude, double longitude) {
         mapView.getOverlays().remove(currentMarker);
+        mapView.getOverlays().remove(routingOverlay);
         currentLocation = new GeoPoint(latitude, longitude);
         currentMarker = new Marker(mapView);
         currentMarker.setPosition(currentLocation);
@@ -79,6 +78,7 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
         mapView.getOverlays().add(currentMarker);
         mapView.getController().animateTo(currentLocation);
         mapView.invalidate();
+        getRouting();
     }
 
     public void setDestination(double latitude, double longitude) {
