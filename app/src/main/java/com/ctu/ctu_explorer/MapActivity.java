@@ -82,12 +82,12 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
         mapView.getOverlays().add(destinationMarker);
         mapView.getController().animateTo(destinationPoint);
         mapView.invalidate();
+        getRouting();
     }
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         if (Buildings.locations[pos] != null) {
             setDestination(Buildings.locations[pos].getLatitude(), Buildings.locations[pos].getLongitude());
-            getRouting();
         }
     }
 
