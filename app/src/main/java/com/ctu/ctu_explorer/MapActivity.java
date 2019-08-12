@@ -19,16 +19,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.LocationSettingsRequest;
-import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 
 import org.osmdroid.bonuspack.routing.OSRMRoadManager;
 import org.osmdroid.bonuspack.routing.Road;
@@ -43,7 +35,6 @@ import org.osmdroid.views.overlay.Marker;
 import org.osmdroid.views.overlay.Polyline;
 
 import java.util.ArrayList;
-
 
 public class MapActivity extends AppCompatActivity implements OnItemSelectedListener {
     private static final int MULTIPLE_PERMISSION_REQUEST_CODE = 4;
@@ -131,9 +122,9 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
         mapView.getOverlays().add(new MapEventsOverlay(mReceive));
 
         Spinner buildingMenu = findViewById(R.id.building_selection);
-        String[] buildings = Buildings.titles;
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, buildings);
-        buildingMenu.setAdapter(adapter);
+//        String[] buildings = Buildings.titles;
+//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, buildings);
+//        buildingMenu.setAdapter(adapter);
         buildingMenu.setOnItemSelectedListener(this);
 
         ImageButton myLocationBtn = findViewById(R.id.my_location_btn);

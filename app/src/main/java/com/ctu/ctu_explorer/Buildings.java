@@ -3,17 +3,6 @@ package com.ctu.ctu_explorer;
 import org.osmdroid.util.GeoPoint;
 
 public final class Buildings {
-    public static String[] titles = {
-            "Select a destination...",
-            "College of ICT",
-            "College of Economics",
-            "School of Law",
-            "College of Agriculture",
-            "College of Aquaculture & Fisheries",
-            "College of Engineering Technology",
-            "College of Environment & Natural Resources",
-            "College of Natural Sciences",
-    };
     public static GeoPoint[] locations = {
             null,
             new GeoPoint(10.030915, 105.769023),
