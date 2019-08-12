@@ -17,4 +17,8 @@
         <item>College of Environment &amp; Natural Resources</item>
         <item>College of Natural Sciences</item>
     </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Vietnamese</item>
+    </string-array>
 </resources>

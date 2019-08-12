@@ -23,6 +23,7 @@ public class DrawerMenu {
         );
         drawerBuilder.withSelectedItem(-1);
         drawerBuilder.withHeader(R.layout.drawer_header);
+        drawerBuilder.withStickyFooter(R.layout.drawer_footer);
         drawer = drawerBuilder.build();
     }
 
