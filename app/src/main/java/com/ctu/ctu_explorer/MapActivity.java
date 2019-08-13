@@ -122,9 +122,6 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
         mapView.getOverlays().add(new MapEventsOverlay(mReceive));
 
         Spinner buildingMenu = findViewById(R.id.building_selection);
-//        String[] buildings = Buildings.titles;
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, buildings);
-//        buildingMenu.setAdapter(adapter);
         buildingMenu.setOnItemSelectedListener(this);
 
         ImageButton myLocationBtn = findViewById(R.id.my_location_btn);

@@ -17,7 +17,11 @@ public class DrawerMenu {
         drawerBuilder.addDrawerItems(
                 new PrimaryDrawerItem().withName("About").withIcon(R.drawable.ic_info_black_24dp),
                 new PrimaryDrawerItem().withName("Instructions").withIcon(R.drawable.ic_assignment_black_24dp),
-                new PrimaryDrawerItem().withName("Buildings Information").withIcon(R.drawable.ic_business_black_24dp),
+                new PrimaryDrawerItem().withName("Buildings Information").withIcon(R.drawable.ic_business_black_24dp)
+                        .withSubItems(
+                                new SecondaryDrawerItem().withName("CICT"),
+                                new SecondaryDrawerItem().withName("LAW")
+                        ),
                 new DividerDrawerItem(),
                 new PrimaryDrawerItem().withName("Report Problem").withIcon(R.drawable.ic_report_problem_black_24dp)
         );
