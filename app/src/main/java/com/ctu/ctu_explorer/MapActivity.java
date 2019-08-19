@@ -2,6 +2,7 @@ package com.ctu.ctu_explorer;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.StrictMode;
@@ -35,7 +36,6 @@ import org.osmdroid.views.overlay.Marker;
 import org.osmdroid.views.overlay.Polyline;
 
 import java.util.ArrayList;
-
 public class MapActivity extends AppCompatActivity implements OnItemSelectedListener {
     private static final int MULTIPLE_PERMISSION_REQUEST_CODE = 4;
     private MapView mapView;
@@ -45,6 +45,7 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
     private Marker destinationMarker;
     private Polyline routingOverlay;
     private FusedLocationProviderClient fusedLocationClient;
+
 
     final MapEventsReceiver mReceive = new MapEventsReceiver(){
         @Override
@@ -100,13 +101,13 @@ public class MapActivity extends AppCompatActivity implements OnItemSelectedList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-
-        DrawerMenu.create(this);
+        final DrawerMenu dm = new DrawerMenu();
+        dm.create(this);
         ImageButton drawerBtn = findViewById(R.id.drawer_btn);
         drawerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DrawerMenu.open();
+                dm.open();
             }
         });
 
